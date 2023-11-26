@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- large-screen   -->
+        <nav class="p-2 m-auto bg-primary  dark:bg-grey-800 dark:bg-gray-800">
+            <div class="container grid grid-cols-4 justify-between items-center m-auto ">
+                <a href="#" class="font-semibold  text-2xl flex gap-2 items-center col-span-2">
+                    <img src="img/icons/it_club.png" alt="" class="w-16">
+                    <p class="text-white whitespace-normal dark:text-primary hidden sm:block">information technology club</p>
+                    <p class="text-white whitespace-normal dark:text-primary sm:hidden">IT Club</p>
+                </a>
+                <!-- links navbar large screen  -->
+                <div class="links-nav hidden lg:flex justify-center">
+                    <ul class="list-none  gap-3 text-xl flex ">
+                        <li>
+                            <a href="#" class="link-nav">home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-nav">contact</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-nav">about us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- links navbar small screen -->
+                <div class="links-nav lg:hidden flex justify-center relative">
+                    <input
+                        type="button"
+                        class="show-menu "
+                        id="btnShowMenu"
+                        value="sections ⋁"
+                    >
+                    <ul class="list-menu flex hidden" id="mobile-menu">
+                        <li>
+                            <a href="#" class="link-nav-menu">home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-nav-menu">contact</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-nav-menu">about us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Dark mode switcher -->
+                <div class="flex justify-end h-fit w-full ">
+                    <button id="theme-toggle" type="button" class="btn-light ">
+                        <svg
+                            id="theme-toggle-dark-icon"
+                            class="w-5 h-5 hidden"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg
+                            id="theme-toggle-light-icon"
+                            class="w-5 h-5 hidden"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- sections  -->
+        <div class="bg-white dark:bg-gray-700 h-full">
+            <!-- section about us  -->
+            <div class="container w-full m-auto p-5 text-center grid-cols-2 items-center justify-center lg:grid lg:w-auto">
+                <div class="p-5 w-64 md:w-96 flex justify-center items-center m-auto">
+                    <img src="img/icons/industry-and-energy.png" class="w-full" alt="">
+                </div>
+                <div class="text-primary flex justify-center items-center flex-col py-8">
+                    <h1 class="font-bold text-3xl capitalize">information technology club</h1>
+                    <p class="font-semibold text-xl text-gray-600 dark:text-white lg:text-justify">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem velit dignissimos suscipit harum, nam eligendi sunt ratione illum molestiae magnam ad, dolores repellat dolore laboriosam adipisci odit eaque ex dolor.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem velit dignissimos suscipit harum, nam eligendi sunt ratione illum molestiae magnam ad, dolores repellat dolore laboriosam adipisci odit eaque ex dolor.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem velit dignissimos suscipit harum, nam eligendi sunt ratione illum molestiae magnam ad, dolores repellat dolore laboriosam adipisci odit eaque ex dolor.
+                    </p>
+                    <div class="links-socail">
+                        <p class="text-2xl m-1">contact us</p>
+                        <ul class="list-none flex gap-3">
+                            <li>
+                                <a href=""><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-whatsapp"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- section category  -->
+            <div class="text-center">
+                <p class="w-full bg-primary bg-opacity-60 text-3xl p-4 font-bold text-white">Sections</p>
+                <div class="p-6 flex gap-3 flex-wrap justify-center">
+                    <!-- card 1 -->
+                    <div class="card">
+                        <img src="img/icons/information-technology.png" alt="" class="w-full p-2">
+                        <div class="description text-center">
+                            <h1 class="text-xl font-bold text-primary mb-2 capitalize">information technology</h1>
+                            <a href="#" class="visit-card">visit</a>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="card">
+                        <img src="img/icons/information-technology.png" alt="" class="w-full p-2">
+                        <div class="description text-center">
+                            <h1 class="text-xl font-bold text-primary mb-2 capitalize">information technology</h1>
+                            <a href="#" class="visit-card">visit</a>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="card">
+                        <img src="img/icons/information-technology.png" alt="" class="w-full p-2">
+                        <div class="description text-center">
+                            <h1 class="text-xl font-bold text-primary mb-2 capitalize">information technology</h1>
+                            <a href="#" class="visit-card">visit</a>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="card">
+                        <img src="img/icons/information-technology.png" alt="" class="w-full p-2">
+                        <div class="description text-center">
+                            <h1 class="text-xl font-bold text-primary mb-2 capitalize">information technology</h1>
+                            <a href="#" class="visit-card">visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section team -->
+            <div class="text-center">
+                <p class="w-full bg-primary bg-opacity-60 text-3xl p-4 font-bold text-white">Team Member</p>
+                <div class="p-6 flex gap-7 flex-wrap justify-center mt-5 ">
+                    <!-- member 1 -->
+                    <div class="member">
+                        <div class="flex justify-center ">
+                            <img src="img/teams/blog-author-2.jpg" class="img-member " alt="">
+                        </div>
+                        <div class="description">
+                            <h1 class="text-xl font-bold text-primary mb-2">Najwa Mohammed</h1>
+                            <p class=" text-secondary font-semibold">head it club</p>
+                            <div class="links-socail">
+                                <ul class="list-none flex gap-3 justify-center">
+                                    <li>
+                                        <a href=""><i class="fab fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fab fa-whatsapp"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fab fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- member 2 -->
+                    <div class="member">
+                        <div class="flex justify-center ">
+                            <img src="img/teams/blog-author-4.jpg" class="img-member" alt="">
+                        </div>
+                        <div class="description">
+                            <h1 class="text-xl font-bold text-primary mb-2">Ashji Adel</h1>
+                            <p class=" text-secondary font-semibold">head IT</p>
+                            <div class="links-socail">
+                                <ul class="list-none flex gap-3 justify-center">
+                                    <li>
+                                        <a href=""><i class="fab fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fab fa-whatsapp"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fab fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- member 3 -->
+                    <div class="member">
+                        <div class="flex justify-center ">
+                            <img src="img/teams/blog-author-6.jpg" class="img-member " alt="">
+                        </div>
+                        <div class="description">
+                            <h1 class="text-xl font-bold text-primary mb-2">Aliaa Ramadan</h1>
+                            <p class=" text-secondary font-semibold">head HR</p>
+                            <div class="links-socail">
+                                <ul class="list-none flex gap-3 justify-center">
+                                    <li>
+                                        <a href=""><i class="fab fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fab fa-whatsapp"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fab fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class=" bg-gray-800">
+            <div class=" p-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
+                <!-- about us  -->
+                <div class="about-us md:col-span-2 mx-auto">
+                    <div class="p-5 flex justify-center items-center m-auto">
+                        <img src="img/icons/industry-and-energy.png" class="w-28" alt="">
+                    </div>
+                    <div class="text-primary flex justify-center items-center flex-col py-3">
+                        <h1 class="font-semibold text-2xl capitalize text-center">information technology club</h1>
+                    </div>
+                    <div class="links-socail">
+                        <ul class="list-none flex gap-3 m-3">
+                            <li>
+                                <a href=""><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-whatsapp"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- links footer  -->
+                <div class="links-footer text-center m-auto col-span-2 lg:col-span-1">
+                    <p class="text-2xl text-primary font-bold mb-5">links</p>
+                    <ul class="list-none flex gap-3 flex-col">
+                        <li>
+                            <a href="" class="link-footer">link 1</a>
+                        </li>
+                        <li>
+                            <a href="" class="link-footer">link 2</a>
+                        </li>
+                        <li>
+                            <a href="" class="link-footer">link 3</i></a>
+                        </li>
+                        <li>
+                            <a href="" class="link-footer">link 4</i></a>
+                        </li>
+                        <li>
+                            <a href="" class="link-footer">link 5</i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- form  -->
+                <div class="container col-span-2 text-center m-auto">
+                    <p class="text-2xl text-primary font-bold mb-5">Latest Updates</p>
+                    <form action="#">
+                        <div class="m-5 ">
+                          <input type="email" class=" w-64 rounded-md border-primary outline-none " placeholder="Enter your email"/>
+                        </div>
+                        <button class="btn-subscribe">
+                          Subscribe
+                        </button>
+                      </form>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
